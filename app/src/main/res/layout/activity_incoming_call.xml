@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/tvAppName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:background="@null"
+            android:contentDescription="@string/contentDesp"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="italic|bold" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAppName"
+            app:cardBackgroundColor="#606060"
+            app:cardCornerRadius="6dp">
+
+
+            <RelativeLayout
+                android:id="@+id/rl1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="12dp"
+                android:padding="6dp">
+
+                <RelativeLayout
+                    android:id="@+id/rl4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="6dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tvMsg"
+                        style="@android:style/TextAppearance.DeviceDefault.Small"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/tvClose"
+                        android:gravity="center|start"
+                        android:text="Msg"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/tvClose"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/ic_close"
+                        android:backgroundTint="@color/colorLightWhite"
+                        android:gravity="center"
+                        android:padding="2dp" />
+
+                    <View
+                        android:id="@+id/v1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_below="@+id/tvClose"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginEnd="14dp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_toStartOf="@+id/tvClose"
+                        android:background="@color/colorLightWhite" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl4"
+                    android:layout_marginEnd="24dp">
+
+                    <RelativeLayout
+                        android:id="@+id/rl2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tvStamp"
+                            android:layout_width="46dp"
+                            android:layout_height="46dp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/circle_bg_blue"
+                            android:contentDescription="@string/contentDesp"
+                            android:gravity="center"
+                            android:text="n/a"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <ProgressBar
+                            android:id="@+id/progressBar"
+                            android:layout_width="46dp"
+                            android:layout_height="46dp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/circle_bg_blue"
+                            android:gravity="center"
+                            android:indeterminate="true"
+                            android:indeterminateTint="@color/white"
+                            android:indeterminateTintMode="src_atop" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/rl2"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tvName"
+                            style="@android:style/TextAppearance.DeviceDefault.Medium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:contentDescription="@string/contentDesp"
+                            android:gravity="start|center"
+                            android:paddingTop="2dp"
+                            android:text="Customer"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
