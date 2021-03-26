@@ -1,7 +1,7 @@
 # Caller ID
  This is a sample project to showcase an incoming caller ID like Truecaller.
  
- This has the lastest implemetaion of Service (with a targetSdkVersion 30)
+ This has the lastest implemetaion of Service (with targetSdkVersion 30)
  
  
 If you face issue on any particular device??
